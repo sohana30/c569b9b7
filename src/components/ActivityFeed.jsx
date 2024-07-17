@@ -29,20 +29,23 @@ const ActivityFeed = () => {
       setCalls(activeCalls);
       setAllArchived(activeCalls.length === 0); // Update state based on active calls
     } catch (error) {
-      console.error('Error fetching calls', error);
+      console.error("Error fetching calls", error);
     }
   };
 
   const toggleArchiveAllCalls = async () => {
     try {
       // Optimistic UI update
-      setCalls(calls.map(call => ({ ...call, is_archived: !allArchived })));
+      setCalls(calls.map((call) => ({ ...call, is_archived: !allArchived })));
       for (const call of calls) {
         await updateActivity(call.id, { is_archived: !allArchived });
       }
       fetchCalls(); // Ensure the data is refreshed after the operation
     } catch (error) {
-      console.error(`Error ${allArchived ? 'unarchiving' : 'archiving'} all calls`, error);
+      console.error(
+        `Error ${allArchived ? "unarchiving" : "archiving"} all calls`,
+        error
+      );
       fetchCalls(); // Revert changes in case of error
     }
   };
@@ -67,7 +70,9 @@ const ActivityFeed = () => {
     <CallItem
       key={call.id}
       call={call}
-      onArchive={() => updateActivity(call.id, { is_archived: true }).then(fetchCalls)}
+      onArchive={() =>
+        updateActivity(call.id, { is_archived: true }).then(fetchCalls)
+      }
       onSelect={() => navigate(`/call/${call.id}`)}
     />
   );
@@ -89,11 +94,14 @@ const ActivityFeed = () => {
         <div className="tabs">
           <button className="tab-button">Inbox</button>
           <button className="tab-button">All calls</button>
-          <TuneIcon className="tab-button border-filter "/>
+          <TuneIcon className="tab-button border-filter " />
         </div>
       </div>
       <div className="calls">
-        <ToggleArchiveButton onClick={toggleArchiveAllCalls} allArchived={allArchived} />
+        <ToggleArchiveButton
+          onClick={toggleArchiveAllCalls}
+          allArchived={allArchived}
+        />
         {Object.keys(groupedCalls).map((date) => (
           <div key={date}>
             <div className="date-divider">

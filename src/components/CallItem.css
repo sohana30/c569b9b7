@@ -6,22 +6,11 @@
   padding: 16px;
 }
 
-.call-description {
-  color: #888;
-}
-
-.call-time,
-.call-date {
-  color: #888;
-  border-left: 1px dashed #ddd;
-  padding-left: 8px;
-}
-
 .call-item {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
   border-radius: 12px;
-  padding: 12px 16px;
+  padding: 8px 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,10 +31,9 @@
 }
 
 .call-icon {
-  margin-right: 16px;
   background-color: #f4f4f4;
   border-radius: 50%;
-  padding: 8px;
+  padding: 8px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +49,7 @@
 }
 
 .missed-count {
-  background-color: rgb(224, 96, 46);;
+  background-color: rgb(224, 96, 46);
   color: white;
   border-radius: 50%;
   margin-left: 5px;
@@ -83,7 +71,7 @@
 
 .call-description {
   display: block;
-  color: #666;
+  color: #888;
   margin-top: 4px;
   text-align: left;
   overflow: hidden;
@@ -91,18 +79,20 @@
 }
 
 .call-time {
-  color: #999;
-  font-size: 12px;
+  color: #888;
+  font-size: 10px;
   margin-left: 16px;
+  padding-left: 8px;
   display: flex;
   align-items: center;
+  border-left: 1px dashed #ddd;
 }
 
 .call-period {
   padding: 2px 6px;
   border: 1px solid #ddd;
   border-radius: 4px 0px 0px 4px;
-  margin-right: -17px;
+  margin-right: -9px;
   margin-left: 4px;
   text-transform: uppercase;
 }
