@@ -73,7 +73,7 @@
   background-color: rgb(224, 96, 46);
   opacity: 0;
   transition: opacity 0.3s;
-  margin-bottom: -5px;
+  margin-bottom: -8px;
 }
 
 .tab-button:hover::after,
