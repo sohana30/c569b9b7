@@ -1,0 +1,14 @@
+.unarchive-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.unarchive-button svg {
+  margin-right: 8px;
+}

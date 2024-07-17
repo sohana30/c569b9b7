@@ -1,0 +1,121 @@
+/* CallItem.css */
+
+.calls {
+  height: 500px; /* Set a fixed height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 16px;
+}
+
+.call-description {
+  color: #888;
+}
+
+.call-time,
+.call-date {
+  color: #888;
+  border-left: 1px dashed #ddd;
+  padding-left: 8px;
+}
+
+.call-item {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.call-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.call-details {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.call-icon {
+  margin-right: 16px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-info {
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  flex-grow: 1;
+  margin-left: 8px;
+  overflow: hidden;
+}
+
+.missed-count {
+  background-color: rgb(224, 96, 46);;
+  color: white;
+  border-radius: 50%;
+  margin-left: 5px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.call-number {
+  font-weight: bold;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.call-description {
+  display: block;
+  color: #666;
+  margin-top: 4px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.call-time {
+  color: #999;
+  font-size: 12px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.call-period {
+  padding: 2px 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0px 0px 4px;
+  margin-right: -17px;
+  margin-left: 4px;
+  text-transform: uppercase;
+}
+
+.call-item button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+.call-item button:hover {
+  text-decoration: underline;
+}

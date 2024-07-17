@@ -1,0 +1,28 @@
+/* ArchivedCalls.css */
+
+.archived-calls {
+  width: 400px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.archived-calls-header {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.archived-calls-header p {
+  font-size: 1rem;
+  font-weight: 600;
+}
